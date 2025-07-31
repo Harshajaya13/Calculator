@@ -1,0 +1,147 @@
+
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f0f8ff, #e0ffff);
+      background-size: 400% 400%;
+      animation: gradientFlow 10s ease infinite;
+      color: #333;
+    }
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    header.hero {
+      background: url('https://beaches.lacounty.gov/wp-content/uploads/2016/10/BeachCleaning.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
+    header.hero h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    header.hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background-color: #00a8cc;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #007e99;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #e0f7fa;
+      padding: 1rem;
+      gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #007e99;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00a8cc;
+    }
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    section h2 {
+      font-size: 2.5rem;
+      color: #00a8cc;
+      margin-bottom: 1rem;
+    }
+    section p, section ul {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    section ul {
+      list-style: none;
+      padding: 0;
+    }
+    section ul li {
+      background: #e0f7fa;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    section img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 20px;
+      margin-top: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    #about{
+        width: 600px;
+        height: 500px;
+        padding-left: 500px;
+    }
+    iframe {
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      margin-top: 2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      max-width: 400px;
+      margin: auto;
+      margin-top: 4rem;
+    }
+    input, select, button {
+      padding: 1rem;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #00a8cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #007e99;
+    }
+    footer {
+      background-color: #007e99;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+
